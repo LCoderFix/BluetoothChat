@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <TextView
+        android:id="@+id/tv_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/img_head"
+        android:layout_toStartOf="@id/img_head"
+        android:layout_alignBaseline="@id/img_head"
+        android:layout_marginRight="8dp"
+        android:text="Device" />
+    <ImageView
+        android:id="@+id/img_head"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+
+        android:layout_alignParentRight="true"
+        android:src="@drawable/headportrait" />
+    <ImageView
+        android:id="@+id/img_right"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="12dp"
+        android:layout_toStartOf="@id/img_head"
+        android:layout_toLeftOf="@id/img_head"
+        android:layout_below="@id/tv_device"
+        android:src="@drawable/chat_background"/>
+</RelativeLayout>
